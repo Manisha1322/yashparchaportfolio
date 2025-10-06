@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Kumar Parcha | Video Editor & Motion Designer</title>
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <style>
-    body { font-family: 'Poppins', sans-serif; }
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
     .font-display { font-family: 'Oswald', sans-serif; }
     .text-gradient { background: linear-gradient(to right, #8b5cf6, #ec4899); -webkit-background-clip: text; color: transparent; }
     .skill-bar { height: 8px; background: #333; border-radius: 10px; overflow: hidden; }
-    .skill-meter { height: 100%; background: linear-gradient(to right, #8b5cf6, #ec4899); transform: scaleX(0); transform-origin: left; transition: all 1.2s ease; }
+    .skill-meter {
+  height: 100%;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+  width: 0%; /* start from 0% */
+  border-radius: 10px;
+  transition: width 1.5s ease; /* smooth width animation */
+}
+
   </style>
 </head>
 <body class="bg-gray-950 text-gray-200">
 
 <!-- Navbar -->
-<header class="fixed top-0 left-0 w-full bg-gray-900 z-50 shadow-lg">
+<header class="fixed top-0 left-0 w-full bg-gray-900 z-50 shadow-lg" data-aos="fade-down">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
     <h1 class="text-2xl font-display font-bold text-gradient">Yash Parcha</h1>
     <nav class="hidden md:flex space-x-6">
@@ -42,18 +55,18 @@
 
 <!-- Hero -->
 <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 to-pink-700 text-white text-center">
-  <div>
-    <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">Video Editor & Motion Designer</h1>
-    <p class="text-lg md:text-xl mb-8">Creating stories through visuals, motion, and design.</p>
-    <a href="#portfolio" class="px-6 py-3 bg-white text-black rounded-lg font-bold hover:bg-gray-200 transition">View My Work</a>
+  <div data-aos="zoom-in">
+    <h1 class="text-5xl md:text-6xl font-display font-bold mb-6 animate-pulse">Video Editor & Motion Designer</h1>
+    <p class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">Creating stories through visuals, motion, and design.</p>
+    <a href="#portfolio" class="px-6 py-3 bg-white text-black rounded-lg font-bold hover:bg-gray-200 transition" data-aos="fade-up" data-aos-delay="400">View My Work</a>
   </div>
 </section>
 
 <!-- About -->
 <section id="about" class="py-20 bg-gray-900 text-gray-300">
   <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <img src="img1.webp" alt="Yash Kumar Parcha" class="rounded-2xl shadow-lg">
-    <div>
+    <img src="img1.webp" alt="Yash Kumar Parcha" class="rounded-2xl shadow-lg" data-aos="fade-right">
+    <div data-aos="fade-left">
       <h2 class="text-4xl font-display font-bold mb-6">About Me</h2>
       <p class="mb-6">I’m a passionate Video Editor & Motion Graphic Designer from Ludhiana, India. Skilled in Adobe Premiere Pro, After Effects, and motion design, I bring stories to life with visual creativity and technical expertise.</p>
       <p class="mb-6">Flexible, deadline-driven, and always eager to learn new techniques to deliver engaging content.</p>
@@ -62,55 +75,24 @@
   </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="py-20 bg-black text-gray-200">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-display font-bold mb-12 text-center">My Skills</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-      <div>
-        <h3 class="font-bold">Video Production & Editing</h3>
-        <div class="skill-bar"><div class="skill-meter" data-width="95%"></div></div>
-      </div>
-      <div>
-        <h3 class="font-bold">Motion Graphics Design</h3>
-        <div class="skill-bar"><div class="skill-meter" data-width="90%"></div></div>
-      </div>
-      <div>
-        <h3 class="font-bold">Adobe Premiere Pro</h3>
-        <div class="skill-bar"><div class="skill-meter" data-width="92%"></div></div>
-      </div>
-      <div>
-        <h3 class="font-bold">After Effects</h3>
-        <div class="skill-bar"><div class="skill-meter" data-width="88%"></div></div>
-      </div>
-      <div>
-        <h3 class="font-bold">Creative Storytelling</h3>
-        <div class="skill-bar"><div class="skill-meter" data-width="85%"></div></div>
-      </div>
-      <div>
-        <h3 class="font-bold">Visual Effects</h3>
-        <div class="skill-bar"><div class="skill-meter" data-width="87%"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Skills --> <section id="skills" class="py-20 bg-black text-gray-200"> <div class="container mx-auto px-6"> <h2 class="text-4xl font-display font-bold mb-12 text-center" data-aos="fade-up">My Skills</h2> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10"> <div data-aos="fade-up" data-aos-delay="100"> <div class="flex justify-between mb-2"> <h3 class="font-bold">Video Production & Editing</h3><span class="text-pink-400 font-semibold">95%</span> </div> <div class="bg-gray-700 h-3 rounded-full overflow-hidden"> <div class="skill-meter" data-width="95%"></div> </div> </div> <div data-aos="fade-up" data-aos-delay="200"> <div class="flex justify-between mb-2"> <h3 class="font-bold">Motion Graphics Design</h3><span class="text-pink-400 font-semibold">90%</span> </div> <div class="bg-gray-700 h-3 rounded-full overflow-hidden"> <div class="skill-meter" data-width="90%"></div> </div> </div> <div data-aos="fade-up" data-aos-delay="300"> <div class="flex justify-between mb-2"> <h3 class="font-bold">Adobe Premiere Pro</h3><span class="text-pink-400 font-semibold">92%</span> </div> <div class="bg-gray-700 h-3 rounded-full overflow-hidden"> <div class="skill-meter" data-width="92%"></div> </div> </div> <div data-aos="fade-up" data-aos-delay="400"> <div class="flex justify-between mb-2"> <h3 class="font-bold">After Effects</h3><span class="text-pink-400 font-semibold">88%</span> </div> <div class="bg-gray-700 h-3 rounded-full overflow-hidden"> <div class="skill-meter" data-width="88%"></div> </div> </div> <div data-aos="fade-up" data-aos-delay="500"> <div class="flex justify-between mb-2"> <h3 class="font-bold">Creative Storytelling</h3><span class="text-pink-400 font-semibold">85%</span> </div> <div class="bg-gray-700 h-3 rounded-full overflow-hidden"> <div class="skill-meter" data-width="85%"></div> </div> </div> <div data-aos="fade-up" data-aos-delay="600"> <div class="flex justify-between mb-2"> <h3 class="font-bold">Visual Effects</h3><span class="text-pink-400 font-semibold">87%</span> </div> <div class="bg-gray-700 h-3 rounded-full overflow-hidden"> <div class="skill-meter" data-width="87%"></div> </div> </div> </div> </div> </section>
 
 <!-- Experience -->
 <section id="experience" class="py-20 bg-gray-900 text-gray-200">
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto px-6" data-aos="fade-up">
     <h2 class="text-4xl font-display font-bold mb-12 text-center">Experience</h2>
     <div class="space-y-8">
-      <div class="bg-gray-800 p-6 rounded-lg">
+      <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-right">
         <h3 class="font-display text-2xl font-bold">Video Editor - Perfect Pixel Pro</h3>
         <p class="text-sm text-gray-400">01/2025 - Present | Mohali, India</p>
         <p class="mt-4">Edited video content for various projects using industry-standard software. Assisted in motion graphics and visual effects creation.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg">
+      <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-left">
         <h3 class="font-display text-2xl font-bold">Video Editor - News N Punjabi</h3>
         <p class="text-sm text-gray-400">05/2023 - 12/2024 | Mohali, India</p>
         <p class="mt-4">Created seamless video edits, synced audio, optimized content for social media, and collaborated with creative teams.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg">
+      <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-right">
         <h3 class="font-display text-2xl font-bold">Motion Graphic Designer - Apptunix</h3>
         <p class="text-sm text-gray-400">01/2024 - 09/2024 | Chandigarh, India</p>
         <p class="mt-4">Designed animated explainer videos, vector illustrations, and custom motion design solutions.</p>
@@ -120,11 +102,9 @@
 </section>
 
 <!-- Portfolio -->
-<section id="portfolio" class="py-20 bg-black text-white">
+<section id="portfolio" class="py-20 bg-black text-white" data-aos="fade-up">
   <div class="container mx-auto px-6">
     <h2 class="text-4xl font-display font-bold mb-12 text-center">Portfolio</h2>
-
-    <!-- my work link -->
     <div class="text-center">
       <a href="https://drive.google.com/drive/folders/1i7xpHVIbmdwF-_YQL7VN7OqzgHBM09Ch" target="_blank" class="inline-block w-full md:w-auto py-4 px-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:opacity-90 transition">VIEW MY WORK</a>
     </div>
@@ -132,14 +112,14 @@
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-20 bg-black text-white relative overflow-hidden">
+<section id="contact" class="py-20 bg-black text-white relative overflow-hidden" data-aos="fade-up">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16">
       <h2 class="text-5xl font-display font-bold mb-6">Contact Me</h2>
       <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto"></div>
     </div>
     <div class="grid md:grid-cols-2 gap-12">
-      <div>
+      <div data-aos="fade-right">
         <h3 class="font-display text-2xl font-bold mb-8 text-gradient">GET IN TOUCH</h3>
         <div class="space-y-6">
           <div class="flex items-center space-x-4"><i class="fas fa-map-marker-alt text-2xl text-purple-400"></i><span>Ludhiana, India</span></div>
@@ -147,7 +127,7 @@
           <div class="flex items-center space-x-4"><i class="fas fa-envelope text-2xl text-purple-400"></i><span>yk27459@gmail.com</span></div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-left">
         <h3 class="font-display text-2xl font-bold mb-8 text-gradient">SEND A MESSAGE</h3>
         <form id="contact-form" class="space-y-6">
           <input type="text" id="name" placeholder="Your Name" class="w-full p-4 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-purple-500 outline-none" required>
@@ -165,50 +145,58 @@
   <p>&copy; 2025 Yash Kumar Parcha | Video Editor & Motion Designer</p>
 </footer>
 
-<!-- Scripts -->
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  // Mobile Menu Toggle
+  AOS.init({ duration: 1000, once: true });
+
+  // Mobile Menu
   const menuBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
-  menuBtn.addEventListener("click", () => { mobileMenu.classList.toggle("hidden"); });
+  menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
 
-  // Smooth Scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-    });
+const skillMeters = document.querySelectorAll(".skill-meter");
+
+function animateSkills() {
+  skillMeters.forEach(meter => {
+    const rect = meter.getBoundingClientRect();
+    if (!meter.classList.contains("animated") && rect.top < window.innerHeight - 50) {
+      meter.classList.add("animated");
+      const targetPercent = parseInt(meter.dataset.width);
+
+      // Animate the bar width
+      meter.style.width = targetPercent + "%";
+
+      // Animate the number along with the bar
+      const percentSpan = meter.parentElement.previousElementSibling.querySelector("span");
+      let current = 0;
+      const increment = targetPercent / (1.5 * 60); // 1.5s animation at 60fps
+      const interval = setInterval(() => {
+        current += increment;
+        if (current >= targetPercent) current = targetPercent;
+        percentSpan.textContent = Math.round(current) + "%";
+        if (current === targetPercent) clearInterval(interval);
+      }, 1000 / 60);
+    }
   });
+}
 
-  // Skill Animation
-  document.addEventListener("scroll", () => {
-    document.querySelectorAll(".skill-meter").forEach(meter => {
-      const rect = meter.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 50) {
-        meter.style.transform = "scaleX(1)";
-        meter.style.width = meter.dataset.width;
-      }
-    });
-  });
+document.addEventListener("scroll", animateSkills);
+window.addEventListener("load", animateSkills);
 
-  // WhatsApp Message Form
+
+
+  // WhatsApp Contact
   const contactForm = document.getElementById("contact-form");
-  contactForm.addEventListener("submit", function(e) {
+  contactForm.addEventListener("submit", e => {
     e.preventDefault();
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
-
-    if (!name || !email || !message) {
-      alert("Please fill all fields!");
-      return;
-    }
-
+    if (!name || !email || !message) { alert("Please fill all fields!"); return; }
     const text = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
-    const phone = "916283762413"; // International format without +
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/916283762413?text=${encodeURIComponent(text)}`, "_blank");
   });
 </script>
-
 </body>
 </html>
