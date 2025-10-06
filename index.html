@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Kumar Parcha | Video Editor & Motion Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .text-gradient { background: linear-gradient(to right, #8b5cf6, #ec4899); -webkit-background-clip: text; color: transparent; }
+    .skill-bar { height: 8px; background: #333; border-radius: 10px; overflow: hidden; }
+    .skill-meter { height: 100%; background: linear-gradient(to right, #8b5cf6, #ec4899); transform: scaleX(0); transform-origin: left; transition: all 1.2s ease; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200">
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full bg-gray-900 z-50 shadow-lg">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-display font-bold text-gradient">Yash Parcha</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-purple-400">Home</a>
+      <a href="#about" class="hover:text-purple-400">About</a>
+      <a href="#skills" class="hover:text-purple-400">Skills</a>
+      <a href="#experience" class="hover:text-purple-400">Experience</a>
+      <a href="#portfolio" class="hover:text-purple-400">Portfolio</a>
+      <a href="#contact" class="hover:text-purple-400">Contact</a>
+    </nav>
+    <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu" class="hidden bg-gray-800 px-6 py-4 space-y-2">
+    <a href="#home" class="block hover:text-purple-400">Home</a>
+    <a href="#about" class="block hover:text-purple-400">About</a>
+    <a href="#skills" class="block hover:text-purple-400">Skills</a>
+    <a href="#experience" class="block hover:text-purple-400">Experience</a>
+    <a href="#portfolio" class="block hover:text-purple-400">Portfolio</a>
+    <a href="#contact" class="block hover:text-purple-400">Contact</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 to-pink-700 text-white text-center">
+  <div>
+    <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">Video Editor & Motion Designer</h1>
+    <p class="text-lg md:text-xl mb-8">Creating stories through visuals, motion, and design.</p>
+    <a href="#portfolio" class="px-6 py-3 bg-white text-black rounded-lg font-bold hover:bg-gray-200 transition">View My Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 bg-gray-900 text-gray-300">
+  <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <img src="/img1.webp" alt="Yash Kumar Parcha" class="rounded-2xl shadow-lg">
+    <div>
+      <h2 class="text-4xl font-display font-bold mb-6">About Me</h2>
+      <p class="mb-6">I’m a passionate Video Editor & Motion Graphic Designer from Ludhiana, India. Skilled in Adobe Premiere Pro, After Effects, and motion design, I bring stories to life with visual creativity and technical expertise.</p>
+      <p class="mb-6">Flexible, deadline-driven, and always eager to learn new techniques to deliver engaging content.</p>
+      <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:opacity-90 transition">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20 bg-black text-gray-200">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-display font-bold mb-12 text-center">My Skills</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-bold">Video Production & Editing</h3>
+        <div class="skill-bar"><div class="skill-meter" data-width="95%"></div></div>
+      </div>
+      <div>
+        <h3 class="font-bold">Motion Graphics Design</h3>
+        <div class="skill-bar"><div class="skill-meter" data-width="90%"></div></div>
+      </div>
+      <div>
+        <h3 class="font-bold">Adobe Premiere Pro</h3>
+        <div class="skill-bar"><div class="skill-meter" data-width="92%"></div></div>
+      </div>
+      <div>
+        <h3 class="font-bold">After Effects</h3>
+        <div class="skill-bar"><div class="skill-meter" data-width="88%"></div></div>
+      </div>
+      <div>
+        <h3 class="font-bold">Creative Storytelling</h3>
+        <div class="skill-bar"><div class="skill-meter" data-width="85%"></div></div>
+      </div>
+      <div>
+        <h3 class="font-bold">Visual Effects</h3>
+        <div class="skill-bar"><div class="skill-meter" data-width="87%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="py-20 bg-gray-900 text-gray-200">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-display font-bold mb-12 text-center">Experience</h2>
+    <div class="space-y-8">
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="font-display text-2xl font-bold">Video Editor - Perfect Pixel Pro</h3>
+        <p class="text-sm text-gray-400">01/2025 - Present | Mohali, India</p>
+        <p class="mt-4">Edited video content for various projects using industry-standard software. Assisted in motion graphics and visual effects creation.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="font-display text-2xl font-bold">Video Editor - News N Punjabi</h3>
+        <p class="text-sm text-gray-400">05/2023 - 12/2024 | Mohali, India</p>
+        <p class="mt-4">Created seamless video edits, synced audio, optimized content for social media, and collaborated with creative teams.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="font-display text-2xl font-bold">Motion Graphic Designer - Apptunix</h3>
+        <p class="text-sm text-gray-400">01/2024 - 09/2024 | Chandigarh, India</p>
+        <p class="mt-4">Designed animated explainer videos, vector illustrations, and custom motion design solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-20 bg-black text-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-display font-bold mb-12 text-center">Portfolio</h2>
+
+    <!-- my work link -->
+    <div class="text-center">
+      <a href="https://drive.google.com/drive/folders/1i7xpHVIbmdwF-_YQL7VN7OqzgHBM09Ch" target="_blank" class="inline-block w-full md:w-auto py-4 px-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:opacity-90 transition">VIEW MY WORK</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-black text-white relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-display font-bold mb-6">Contact Me</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="font-display text-2xl font-bold mb-8 text-gradient">GET IN TOUCH</h3>
+        <div class="space-y-6">
+          <div class="flex items-center space-x-4"><i class="fas fa-map-marker-alt text-2xl text-purple-400"></i><span>Ludhiana, India</span></div>
+          <div class="flex items-center space-x-4"><i class="fas fa-phone text-2xl text-purple-400"></i><span>+91 6283762413</span></div>
+          <div class="flex items-center space-x-4"><i class="fas fa-envelope text-2xl text-purple-400"></i><span>yk27459@gmail.com</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-display text-2xl font-bold mb-8 text-gradient">SEND A MESSAGE</h3>
+        <form id="contact-form" class="space-y-6">
+          <input type="text" id="name" placeholder="Your Name" class="w-full p-4 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-purple-500 outline-none" required>
+          <input type="email" id="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-purple-500 outline-none" required>
+          <textarea id="message" rows="4" placeholder="Your Message" class="w-full p-4 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-purple-500 outline-none" required></textarea>
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:opacity-90 transition">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-gray-400 py-6 text-center">
+  <p>&copy; 2025 Yash Kumar Parcha | Video Editor & Motion Designer</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+  // Mobile Menu Toggle
+  const menuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => { mobileMenu.classList.toggle("hidden"); });
+
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  // Skill Animation
+  document.addEventListener("scroll", () => {
+    document.querySelectorAll(".skill-meter").forEach(meter => {
+      const rect = meter.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        meter.style.transform = "scaleX(1)";
+        meter.style.width = meter.dataset.width;
+      }
+    });
+  });
+
+  // WhatsApp Message Form
+  const contactForm = document.getElementById("contact-form");
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill all fields!");
+      return;
+    }
+
+    const text = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    const phone = "916283762413"; // International format without +
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
+  });
+</script>
+
+</body>
+</html>
